@@ -1,0 +1,37 @@
+{
+ "name": "CSS",
+ "short_name": "CSS",
+ "start_url": "./index.html",
+ "scope": "./",
+ "display": "fullscreen",
+ "orientation": "landscape",
+ "background_color": "#0b1118",
+ "theme_color": "#0b1118",
+ "icons": [
+  {
+   "src": "icon-192.png",
+   "sizes": "192x192",
+   "type": "image/png",
+   "purpose": "any"
+  },
+  {
+   "src": "icon-512.png",
+   "sizes": "512x512",
+   "type": "image/png",
+   "purpose": "any"
+  },
+  {
+   "src": "icon-512.png",
+   "sizes": "512x512",
+   "type": "image/png",
+   "purpose": "maskable"
+  }
+ ],
+ "id": "./index.html",
+ "description": "CSS: çok oyunculu, CS tarzı birinci şahıs nişancı oyunu.",
+ "lang": "tr",
+ "categories": [
+  "games"
+ ],
+ "prefer_related_applications": false
+}
