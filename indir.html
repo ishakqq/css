@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="tr"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="dark">
+<title>CSS – İndir</title>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;700&family=Rajdhani:wght@500;700&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#0b1118;--fg:#e8f0f7;--mut:#9fb2c4;--ac:#8fd3ff;--card:rgba(255,255,255,.06);box-sizing:border-box}
+*{box-sizing:border-box}
+html,body{margin:0;min-height:100%;background:var(--bg);color:var(--fg);font:500 16px/1.5 Rajdhani,system-ui,sans-serif}
+body{background:radial-gradient(120% 60% at 50% 0,#27425d 0,#0b1118 70%) no-repeat;padding:calc(28px + env(safe-area-inset-top,0px)) 18px calc(36px + env(safe-area-inset-bottom,0px))}
+main{max-width:520px;margin:0 auto;display:flex;flex-direction:column;gap:18px}
+h1{margin:0;font:700 clamp(72px,26vw,130px)/.92 Oswald,Impact,sans-serif;letter-spacing:.04em;text-transform:uppercase;background:linear-gradient(180deg,#fff 35%,#8fd3ff);-webkit-background-clip:text;background-clip:text;color:transparent}
+.sub{margin:0;color:var(--mut);font-size:18px}
+.btn{display:flex;align-items:center;justify-content:center;gap:10px;text-decoration:none;font:700 22px Oswald,Impact,sans-serif;letter-spacing:.14em;padding:16px 20px;border-radius:12px;text-transform:uppercase}
+.main{background:linear-gradient(135deg,#bfe8ff,#4aa9ee);color:#04202f;box-shadow:0 8px 30px rgba(74,169,238,.35)}
+.alt{background:var(--card);color:var(--fg);border:1px solid rgba(255,255,255,.18);font-size:17px}
+.meta{margin:-6px 0 0;text-align:center;color:var(--mut);font-size:14px}
+.card{background:var(--card);border:1px solid rgba(255,255,255,.1);border-radius:14px;padding:16px 18px}
+.card h2{margin:0 0 10px;font:700 20px Oswald,sans-serif;letter-spacing:.08em;text-transform:uppercase;color:var(--ac)}
+ol{margin:0;padding-left:22px;display:flex;flex-direction:column;gap:8px}
+.note{font-size:14px;color:var(--mut);margin:10px 0 0}
+#ios{display:none;border-color:rgba(255,176,46,.5)}
+#ios h2{color:#ffb02e}
+</style></head><body>
+<main>
+<div><h1>CSS</h1><p class="sub">Karlı üste sız, düşmanları etkisiz hale getir.</p></div>
+
+<div class="card" id="ios"><h2>iPhone mu kullanıyorsun?</h2>
+APK sadece Android’de çalışır. Safari’de oyunu aç, paylaş menüsünden <b>Ana Ekrana Ekle</b>’ye bas. Uygulama gibi açılır.</div>
+
+<a class="btn main" id="apk" href="Kar-Operasyonu.apk" download="CSS.apk">⬇ APK İndir</a>
+<p class="meta">Android 7 ve üzeri · Ücretsiz</p>
+<a class="btn alt" href="index.html">▶ Tarayıcıda oyna</a>
+
+<div class="card"><h2>Nasıl kurulur?</h2>
+<ol>
+<li><b>APK İndir</b> tuşuna bas. Tarayıcı “bu dosya zararlı olabilir” derse <b>Yine de indir</b>’i seç.</li>
+<li>İndirme bitince dosyayı aç. İstenirse <b>Bu kaynaktan yüklemeye izin ver</b> seçeneğini aç ve geri dön.</li>
+<li><b>Yükle</b>’ye bas. Kurulum bitince <b>Aç</b> ile oyuna gir.</li>
+</ol>
+<p class="note">Play Protect “tanınmayan uygulama” uyarısı gösterebilir. Uygulama Play Store dışından kurulduğu için bu normaldir. <b>Yine de yükle</b> diyebilirsin.</p></div>
+</main>
+<script>
+try{if(/iPhone|iPad|iPod/i.test(navigator.userAgent)){document.getElementById('ios').style.display='block';document.getElementById('apk').style.opacity='.5'}}catch(e){}
+</script>
+</body></html>
